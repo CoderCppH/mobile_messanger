@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frindaListFragment">
+    <fragment
+        android:id="@+id/frindaListFragment"
+        android:name="com.example.myapplication.UI.FrindaListFragment.FrindaListFragment"
+        android:label="fragment_frinda_list"
+        tools:layout="@layout/fragment_frinda_list" >
+        <action
+            android:id="@+id/action_frindaListFragment_to_lentaListFragment"
+            app:destination="@id/lentaListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lentaListFragment"
+        android:name="com.example.myapplication.UI.LentaListFragment.LentaListFragment"
+        android:label="fragment_lenta_list"
+        tools:layout="@layout/fragment_lenta_list" >
+        <action
+            android:id="@+id/action_lentaListFragment_to_frindaListFragment"
+            app:destination="@id/frindaListFragment" />
+    </fragment>
+</navigation>

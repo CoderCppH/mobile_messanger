@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_for_main_menu_activity_item_bottom_nativ_home"
+        android:title="Home"
+        android:icon="@drawable/home_svgrepo_com"/>
+    <item
+        android:id="@+id/menu_for_main_menu_activity_item_bottom_nativ_plus"
+        android:title="Plus"
+        android:icon="@drawable/plus_svgrepo_com"/>
+    <item
+        android:id="@+id/menu_for_main_menu_activity_item_bottom_nativ_list"
+        android:title="List"
+        android:icon="@drawable/list_svgrepo_com"/>
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#17212b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/message_id_fullname"
+                android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/message_id_email"
+                android:textSize="10sp"
+            android:textColor="@color/white"
+            android:text="email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ListView
+                    android:cacheColorHint="@color/white"
+                    android:id="@+id/message_id_list_view"
+                    android:background="#0e1621"
+                    android:layout_weight="1"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#17212b"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/message_id_send_text"
+                    android:backgroundTint="#17212b"
+                    android:padding="10dp"
+                    android:paddingLeft="25dp"
+
+                    android:hint="Edit message"
+                    android:textColorHint="#6d6b59"
+                    android:layout_margin="3dp"
+                    android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+                <ImageButton
+                    android:scaleType="fitXY"
+                    android:src="@drawable/send_image"
+                    android:onClick="OnButtonClickSendMessage"
+                    android:overScrollMode="always"
+                    android:backgroundTint="#17212b"
+                    android:background="#17212b"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right|center"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

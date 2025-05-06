@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_for_main_menu_activity_item_Setings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/menu_for_main_menu_activity_item_params1"
+        android:title="Params 1" />
+    <item
+        android:id="@+id/menu_for_main_menu_activity_item_params2"
+        android:title="Params 2" />
+</menu>
